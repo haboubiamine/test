@@ -1,0 +1,4 @@
+<h1>légumes du 12/November/2019</h1>
+<app-legume *ngFor="let t of tablegumes" [img]="t.image" [n]="t.nom" [p]="t.prix" [f]="t.frais" ></app-legume>
+<p>donnez un prix minimum : <input type="number" name="n" [(ngModel)] ="pr"></p>
+<p>le nombre de légumes ayant un prix > {{pr}}</p>

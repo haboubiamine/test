@@ -1,0 +1,7 @@
+
+<ul>
+    <li [ngClass] ="{'c1':check()==0}" >
+        <img src="{{image}}" width="70" height="70"> {{nom |uppercase}} <input type="checkbox" > frais quantité 
+        <input type="number"  name="q"><button (click)=calculer(q.value) >calculer Prix</button> <br> prix={{claprix}}
+    </li>
+</ul>
